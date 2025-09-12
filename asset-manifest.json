@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ramya-dotcom/Marine-Dashboard.git/static/css/main.597db185.css",
+    "main.js": "/ramya-dotcom/Marine-Dashboard.git/static/js/main.1b3dd3f7.js",
+    "static/js/453.22756d4d.chunk.js": "/ramya-dotcom/Marine-Dashboard.git/static/js/453.22756d4d.chunk.js",
+    "index.html": "/ramya-dotcom/Marine-Dashboard.git/index.html",
+    "main.597db185.css.map": "/ramya-dotcom/Marine-Dashboard.git/static/css/main.597db185.css.map",
+    "main.1b3dd3f7.js.map": "/ramya-dotcom/Marine-Dashboard.git/static/js/main.1b3dd3f7.js.map",
+    "453.22756d4d.chunk.js.map": "/ramya-dotcom/Marine-Dashboard.git/static/js/453.22756d4d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.597db185.css",
+    "static/js/main.1b3dd3f7.js"
+  ]
+}

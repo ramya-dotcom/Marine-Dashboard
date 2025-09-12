@@ -290,13 +290,15 @@ const App = () => {
   }, [allVessels]);
 
   // Chart data for selected vessels with memoization
-  const usageChartData = React.useMemo(() => 
-    filteredVessels.slice(0, 10).map(vessel => ({
-      name: vessel.name.split(' ')[0],
-      usage: vessel.dataUsage,
-      download: vessel.downloadSpeed,
-      upload: vessel.uploadSpeed
-    })), [filteredVessels]);
+    const usageChartData = React.useMemo(() => 
+      fleets.slice(0, 8).map(fleet => ({
+        name: fleet.client.split(' ')[0],
+        usage: fleet.totalDataUsage,
+        download: Math.round(fleet.onlineVessels > 0 ? 
+          fleet.vessels.filter(v => v.status === 'online').reduce((sum, v) => sum + v.downloadSpeed, 0) / fleet.onlineVessels : 0),
+        upload: Math.round(fleet.onlineVessels > 0 ? 
+          fleet.vessels.filter(v => v.status === 'online').reduce((sum, v) => sum + v.uploadSpeed, 0) / fleet.onlineVessels : 0)
+      })), [fleets]);
 
   const statusChartData = React.useMemo(() => [
     { name: 'Online', value: onlineVessels, color: '#10b981' },
@@ -337,6 +339,27 @@ const App = () => {
         </div>
       </div>
     </div>
+  );
+
+  const Footer = () => (
+    <footer className="bg-gray-900 border-t border-gray-700 mt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-6 flex flex-col sm:flex-row justify-between items-center">
+          <div className="flex items-center space-x-2 mb-4 sm:mb-0">
+            <span className="text-gray-400 text-sm">Powered by</span>
+            <div className="flex items-center space-x-2">
+              <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded flex items-center justify-center">
+                <span className="text-white text-xs font-bold">N</span>
+              </div>
+              <span className="text-cyan-400 font-semibold text-sm">neurakraft AI</span>
+            </div>
+          </div>
+          <div className="text-gray-400 text-xs">
+            © {new Date().getFullYear()} Tri Tech Marine. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 
   if (!userRole) {

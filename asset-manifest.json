@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Marine-Dashboard/static/css/main.597db185.css",
-    "main.js": "/Marine-Dashboard/static/js/main.561063da.js",
-    "static/js/453.22756d4d.chunk.js": "/Marine-Dashboard/static/js/453.22756d4d.chunk.js",
+    "main.css": "/Marine-Dashboard/static/css/main.b9b739d0.css",
+    "main.js": "/Marine-Dashboard/static/js/main.2bd0b892.js",
+    "static/js/453.8e120a8e.chunk.js": "/Marine-Dashboard/static/js/453.8e120a8e.chunk.js",
     "index.html": "/Marine-Dashboard/index.html",
-    "main.597db185.css.map": "/Marine-Dashboard/static/css/main.597db185.css.map",
-    "main.561063da.js.map": "/Marine-Dashboard/static/js/main.561063da.js.map",
-    "453.22756d4d.chunk.js.map": "/Marine-Dashboard/static/js/453.22756d4d.chunk.js.map"
+    "main.b9b739d0.css.map": "/Marine-Dashboard/static/css/main.b9b739d0.css.map",
+    "main.2bd0b892.js.map": "/Marine-Dashboard/static/js/main.2bd0b892.js.map",
+    "453.8e120a8e.chunk.js.map": "/Marine-Dashboard/static/js/453.8e120a8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.597db185.css",
-    "static/js/main.561063da.js"
+    "static/css/main.b9b739d0.css",
+    "static/js/main.2bd0b892.js"
   ]
 }
